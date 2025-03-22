@@ -13,6 +13,7 @@
 
 int main() {
     // creates variable edge and choice
+    std::string progressBar = "loading ...";
     float edge;
     std::string choice;  // variable choice for if statement
 
@@ -41,7 +42,7 @@ int main() {
         float volume = ((sqrt(2)) / 3) * (pow(edge, 3));
 
         // displays volume
-        std::cout << "Loading ...\n";
+        std::cout << progressBar << "\n";
         std::this_thread::sleep_for(std::chrono::seconds(5));
         std::cout << "You're volume round up to "
                   << std::setprecision(4) << volume;
@@ -60,7 +61,7 @@ int main() {
         float surface_area = (2 * (sqrt(3))) * pow(edge, 2);
 
         // displays surface_area
-        std::cout << "Loading ...\n";
+        std::cout << progressBar <<"\n";
         std::this_thread::sleep_for(std::chrono::seconds(5));
         std::cout << "You're surface area round up to "
                   << std::setprecision(4) << surface_area;
