@@ -50,7 +50,8 @@ int main() {
     }
 
     // calculates for surface area
-    if (choice == "a") {
+    else if (choice == "a") {
+        
         std::cout << "you have chosen surface area. \n";
         std::cout << "Now, what are the lengths of your edges (cm)?: ";
         std::cin >> edge;  // assigns a value to edge
@@ -67,7 +68,7 @@ int main() {
         std::cout << "\n";
     }
 
-    if (choice != "a" && choice != "v") {
-        std::cout << "Lets try this again :)\n";
+    else {
+        std::cout << "ERROR 34, please run the program again \n";
     }
 }
